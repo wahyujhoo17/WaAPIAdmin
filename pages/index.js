@@ -1128,10 +1128,10 @@ import {
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Server URL</label>
                                 <div className="flex items-center space-x-2">
                                     <code className="flex-1 px-3 py-2 bg-gray-100 rounded text-sm font-mono text-gray-800 break-all">
-                                        http://localhost:3000
+                                        {process.env.NEXT_PUBLIC_BACKEND_URL}
                                     </code>
                                     <button
-                                        onClick={() => copyToClipboard('http://localhost:3000')}
+                                        onClick={() => copyToClipboard(process.env.NEXT_PUBLIC_BACKEND_URL)}
                                         className="p-2 text-gray-500 hover:text-gray-700 transition-colors"
                                         title="Copy Server URL"
                                     >
